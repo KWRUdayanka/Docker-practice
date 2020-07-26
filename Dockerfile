@@ -1,4 +1,4 @@
-FROM ubuntu:lates
+FROM ubuntu:latest
 
 WORKDIR /helloworld
 
