@@ -1,0 +1,1 @@
+cd /helloworld && node app.js
