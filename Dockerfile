@@ -17,4 +17,4 @@ ADD ./start_services.sh /helloworld
 
 EXPOSE 3000
 
-CMD sh start_services.sh
+CMD sh start_service.sh
