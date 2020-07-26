@@ -13,7 +13,7 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
 ADD .  /helloworld
 RUN cd /helloworld && npm install
 
-ADD ./start_services.sh /helloworld
+
 
 EXPOSE 3000
 
