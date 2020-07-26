@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM node:12
 
 WORKDIR /helloworld
 
