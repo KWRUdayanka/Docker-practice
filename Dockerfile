@@ -1,20 +1,19 @@
-FROM ubuntu:latest
+FROM node:12
 
-WORKDIR /helloworld
+# Create app directory
+WORKDIR /usr/src/app
 
-RUN apt-get update && \
-    apt-get install -y --fix-missing \
-    curl
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
-    apt install -y nodejs && \
-    npm install -g @angular/cli@9
+RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
 
-ADD .  /helloworld
-RUN cd /helloworld && npm install
+# Bundle app source
+COPY . .
 
-
-
-EXPOSE 3000
-
-CMD sh start_service.sh
+EXPOSE 8080
+CMD [ "node", "server.js" ]
