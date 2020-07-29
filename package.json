@@ -4,7 +4,7 @@
   "description": "nodescrption",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
