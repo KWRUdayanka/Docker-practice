@@ -1,10 +1,10 @@
 {
-  "name": "helloworld",
+  "name": "hello-world",
   "version": "1.0.0",
-  "description": "nodescrption",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/KWRUdayanka/R1/issues"
   },
-  "homepage": "https://github.com/KWRUdayanka/R1#readme"
+  "homepage": "https://github.com/KWRUdayanka/R1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
